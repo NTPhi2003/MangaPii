@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 
 *{
     padding: 0;
@@ -175,9 +179,10 @@ body {
 }
 
 #home .text-heading {
-    font-size: 55px;
+    font-size: 60px;
     color: #a8308f;
-    font-family: "Midnight Minutes";
+    font-family: "Megrim";
+    font-weight: 1000;
     
 }
 
@@ -187,20 +192,12 @@ body {
 
 #home .highlight-heading {
     color: rgb(231, 216, 131);
-    background-image: url(/assets/img/shine2.gif);
+    background-image: url('../img/shine2.gif');
     background-position: center;
     background-size: contain;
 }
 #home .highlight-heading:hover {
     color: gold;
-    /* animation: blur.75s ease-out infinite;
-  background-image: url(/assets/img/shine.gif);
-  background-position: center;
-  background-size: cover;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  text-transform: uppercase;
-  color: transparent; */
  
 }
 /* END HOME */
@@ -213,10 +210,10 @@ body {
 .title {
     padding: 60px 0;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 38px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 30px;
     color: white;
-    font-family: "Madeline";
+    font-family: "Permanent Marker";
 }
 
 .highlight-title {
@@ -305,7 +302,7 @@ body {
 #favorites {  
     width: 100vw;
     background-color: rgb(48, 48, 48);
-    background-image: url(/assets/img/favor2.jpg);
+    background-image: url('../img/favor2.jpg');
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;    
@@ -501,10 +498,10 @@ body {
 
 #ending-img .ending-text-content {
     padding-left: 16%;
-    line-height: 1.4;
-    font-size: 100px;
+    line-height: 2;
+    font-size: 70px;
     color: white;
-    font-family: "Sweet Holiday";
+    font-family: 'Satisfy', cursive;
     text-align: center;
     /* color: transparent;
     background-image: url(https://media2.giphy.com/media/oB6KlAvOuaLtxYy8l4/giphy.gif?cid=ecf05e47ap1ktpfjfx1h3ib8r8j7gadcvvk55e602069efxr&rid=giphy.gif&ct=g);
@@ -514,7 +511,7 @@ body {
 }
 #ending-img .text-3 {
     color:rgb(238, 198, 23);
-    font-size: 120px;   
+    font-size: 100px;   
 }
 /* END Ending IMG */
 
