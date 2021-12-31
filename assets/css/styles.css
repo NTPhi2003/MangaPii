@@ -191,10 +191,7 @@ body {
 }
 
 #home .highlight-heading {
-    color: rgb(231, 216, 131);
-    background-image: url('../img/shine2.gif');
-    background-position: center;
-    background-size: contain;
+    color: rgb(231, 216, 131); 
 }
 #home .highlight-heading:hover {
     color: gold;
