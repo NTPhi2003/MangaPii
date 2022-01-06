@@ -6,13 +6,14 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 html {
     font-family: "Bellota";
     scroll-behavior: smooth;
+    width: 100%;
 }
+
 
 .clear {
     clear: both;
@@ -23,6 +24,7 @@ html {
     display: block;
     clear: both;
 }
+
 body {
     overflow-x:hidden;
 }
@@ -56,16 +58,19 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    height: 49px;
+    height: 48px;
     background-color: rgb(51, 50, 50);
     border-style: inset;
     border-width: 1px;
     border-color: white;
-    
+    z-index: 1;  
+     /* overflow: hidden; */   
 }
 
+
 #nav li a {
-    line-height: 48px;
+    /* text-align: center; */
+    line-height: 46px;
     text-decoration: none; /* delete underline */
     font-size:  22px;
     padding: 0 25px;
@@ -133,21 +138,24 @@ body {
     background-color: rgb(238, 198, 23);
     
 }
-
+#header #mobile-menu {
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-button {
     float: right;
     padding: 0 32px; 
     color: white;
-    line-height: 48px;
+    line-height: 46px;
     font-size: 22px;
     display: block;
-    border-style: solid ;
+    /* border-style: solid ;
     border-width: 1px;
     border-bottom: none;
     border-right: none;
-    border-top: none;
+    border-top: none; */
 }
-
+#header .mobile-menu-btn:hover,
 #header .search-button:hover {
     background-color: rgb(238, 198, 23);
     color:black;
@@ -155,7 +163,26 @@ body {
 }
 /* END HEADER */
 /* BEGIN HOME */
+
 #home {
+    position: relative;
+    padding-top: 48px;
+    height: 100vh;
+    background-image: 
+    url('../img/snow5.gif'),
+    url('../img/homee.jpg');   
+    background-repeat: repeat;
+    background-size: auto, cover;
+    background-position: center;
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+/* #home {
     padding-top: 48px;
     height: 100vh;
     background-image: 
@@ -169,7 +196,7 @@ body {
     align-items: center;
     color: white;
     text-align: center;
-}
+} */
 
 #home .text-content {
     font-weight: 500;
@@ -207,7 +234,6 @@ body {
 .title {
     padding: 60px 0;
     text-align: center;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 30px;
     color: white;
     font-family: "Permanent Marker";
@@ -219,11 +245,11 @@ body {
 }
 
 .personal-info {
-    width: 60vw;
+    width: 60%;
     font-family: Arial, Helvetica;
     color: white;
     display: inline-block;
-    padding-left: 20px !important;
+    padding-left: 20px ;
     /* position: absolute; */
 }
 
@@ -244,6 +270,7 @@ body {
 
 .personal-info .quote {
     width: 650px !important;
+    max-width: 100%;
     text-align: center;
     padding-top: 10px;
     font-style: italic;
@@ -254,13 +281,12 @@ body {
 
 
 #about-me .my-pic {
-    width: 35vw;
+    width: 40%;
     height: 300px;
-    display: inline-block;
+    float: right;
     position: block;
-    background-color: red;
+    padding-right: 20px;
     border-radius: 8px;
-    
 }
 
 .skills {
@@ -286,8 +312,8 @@ body {
     float: left;
     width: 20%;
     text-align: center;
-    
 }
+
 
 .skill-item .skill-name {
     font-size: 15px;
@@ -386,7 +412,8 @@ body {
     margin-top: 15px;
 }
 .list-watch {
-    font-size: 18;
+    font-size: 18px;
+    text-align: center;
     margin-top: 15px;
     display: inline-block;
     text-decoration: none; /* Xóa gạch chân */
