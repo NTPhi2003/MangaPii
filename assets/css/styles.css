@@ -362,6 +362,9 @@ body {
 
 /* Favorites List */
 .favorites-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 32px -8px 0; 
 }
 
@@ -396,6 +399,7 @@ body {
 }
 
 .favorites-list-body {
+    min-height: 275px;
     padding: 16px;
     font-size: 15px;
     background-color: whitesmoke;
